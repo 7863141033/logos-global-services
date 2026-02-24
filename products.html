@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Products - High-quality products from Logos Global Services LLC">
+    <title>Products - Logos Global Services LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Logos Global Services</h1>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="products.html" class="nav-link active">Products</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="#cart-modal" class="nav-link cart-link" onclick="openCart()">Cart <span id="cart-count">0</span></a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Premium solutions for your business needs</p>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-full">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card-full">
+                    <div class="product-image-container">
+                        <div class="product-image-large">📱</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional Package</h3>
+                        <p class="product-description">
+                            Complete professional toolkit for growing businesses. Includes essential software licenses 
+                            and support for 1 year. Perfect for startups and small teams.
+                        </p>
+                        <ul class="product-features">
+                            <li>✓ 3 Software Licenses</li>
+                            <li>✓ 1 Year Technical Support</li>
+                            <li>✓ Monthly Updates</li>
+                            <li>✓ Training Materials</li>
+                        </ul>
+                        <p class="product-price">$99.99</p>
+                        <button class="btn btn-primary" onclick="addToCart('Professional Package', 99.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card-full">
+                    <div class="product-image-container">
+                        <div class="product-image-large">📊</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Business Suite</h3>
+                        <p class="product-description">
+                            Advanced business intelligence and analytics package. Designed for medium-sized enterprises 
+                            needing comprehensive data insights and reporting capabilities.
+                        </p>
+                        <ul class="product-features">
+                            <li>✓ Advanced Analytics</li>
+                            <li>✓ Custom Dashboards</li>
+                            <li>✓ 2 Years Support</li>
+                            <li>✓ Priority Support</li>
+                        </ul>
+                        <p class="product-price">$199.99</p>
+                        <button class="btn btn-primary" onclick="addToCart('Business Suite', 199.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card-full">
+                    <div class="product-image-container">
+                        <div class="product-image-large">🏆</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Enterprise Solution</h3>
+                        <p class="product-description">
+                            Premium enterprise-grade solution with unlimited features and dedicated support. 
+                            For large organizations requiring maximum power and flexibility.
+                        </p>
+                        <ul class="product-features">
+                            <li>✓ Unlimited Features</li>
+                            <li>✓ Dedicated Account Manager</li>
+                            <li>✓ 3 Years Support</li>
+                            <li>✓ Custom Integration</li>
+                        </ul>
+                        <p class="product-price">$499.99</p>
+                        <button class="btn btn-primary" onclick="addToCart('Enterprise Solution', 499.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card-full">
+                    <div class="product-image-container">
+                        <div class="product-image-large">🔒</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Security Premium</h3>
+                        <p class="product-description">
+                            Advanced security package with encryption and threat monitoring. Essential for businesses 
+                            handling sensitive data and compliance requirements.
+                        </p>
+                        <ul class="product-features">
+                            <li>✓ Military-grade Encryption</li>
+                            <li>✓ 24/7 Monitoring</li>
+                            <li>✓ Threat Detection</li>
+                            <li>✓ Compliance Reports</li>
+                        </ul>
+                        <p class="product-price">$299.99</p>
+                        <button class="btn btn-primary" onclick="addToCart('Security Premium', 299.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card-full">
+                    <div class="product-image-container">
+                        <div class="product-image-large">☁️</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cloud Storage Pro</h3>
+                        <p class="product-description">
+                            Secure cloud storage solution with unlimited bandwidth and automatic backups. 
+                            Collaborate seamlessly with team members from anywhere.
+                        </p>
+                        <ul class="product-features">
+                            <li>✓ 2TB Storage</li>
+                            <li>✓ Unlimited Bandwidth</li>
+                            <li>✓ Auto Backup</li>
+                            <li>✓ Team Collaboration</li>
+                        </ul>
+                        <p class="product-price">$149.99</p>
+                        <button class="btn btn-primary" onclick="addToCart('Cloud Storage Pro', 149.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card-full">
+                    <div class="product-image-container">
+                        <div class="product-image-large">📈</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Growth Marketing Toolkit</h3>
+                        <p class="product-description">
+                            Complete digital marketing toolkit with templates, guides, and tools. Accelerate your 
+                            marketing efforts and reach your target audience effectively.
+                        </p>
+                        <ul class="product-features">
+                            <li>✓ 50+ Templates</li>
+                            <li>✓ Email Marketing</li>
+                            <li>✓ Social Media Tools</li>
+                            <li>✓ Analytics Dashboard</li>
+                        </ul>
+                        <p class="product-price">$179.99</p>
+                        <button class="btn btn-primary" onclick="addToCart('Growth Marketing Toolkit', 179.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Shopping Cart</h2>
+                <span class="close" onclick="closeCart()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items"></div>
+                <div id="cart-empty" class="empty-cart">
+                    <p>Your cart is empty. Add products to get started!</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="cart-total">
+                    <strong>Total: $<span id="cart-total">0.00</span></strong>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn btn-secondary" onclick="closeCart()">Continue Shopping</button>
+                    <button class="btn btn-primary" onclick="checkout()">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Logos Global Services LLC</h4>
+                    <p>Your trusted partner for quality services</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Logos Global Services LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

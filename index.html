@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Logos Global Services LLC - Your trusted partner for quality services / Patnè ou fè konfyans pou sèvis kalite">
+    <meta name="keywords" content="services, business, solutions, quality, professional, sèvis, biznis, Kreyòl, Haiti">
+    <title>Logos Global Services LLC - Your Trusted Partner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Logos Global Services</h1>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="#cart" class="nav-link cart-link">Cart <span id="cart-count">0</span></a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Logos Global Services LLC</h1>
+            <p class="hero-subtitle">Your Trusted Partner for Quality Services / Patnè ou fè konfyans pou sèvis kalite</p>
+            <p class="hero-description">Professional solutions tailored to meet your business needs / Solisyon pwofesyonèl adepte ak bezwen ou</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'})">Request a Quote</button>
+                <button class="btn btn-secondary" onclick="window.location.href='services.html'">View Services</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="placeholder-image">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="300" fill="#e8f4f8"/>
+                    <circle cx="200" cy="150" r="80" fill="#0066cc"/>
+                    <path d="M 150 180 Q 200 220 250 180" stroke="#ffffff" stroke-width="3" fill="none"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-preview">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Professional Excellence</h3>
+                    <p>Expert team dedicated to delivering superior quality services with attention to detail</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💼</div>
+                    <h3>Trusted Partnership</h3>
+                    <p>Long-term relationships built on integrity, transparency, and reliable service delivery</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Innovative Solutions</h3>
+                    <p>Cutting-edge services designed to solve your business challenges efficiently</p>
+                </div>
+            </div>
+            <div class="about-link">
+                <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section id="services-preview" class="services-preview">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="section-subtitle">Comprehensive solutions for your business needs</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">📦</div>
+                    <h3>Logistics & Supply Chain</h3>
+                    <p>Efficient and reliable supply chain management solutions</p>
+                    <p class="price">Starting from $499/month</p>
+                    <a href="services.html" class="btn btn-small">View Details</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">🛡️</div>
+                    <h3>Security Services</h3>
+                    <p>Professional security solutions to protect your assets</p>
+                    <p class="price">Starting from $299/month</p>
+                    <a href="services.html" class="btn btn-small">View Details</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">💻</div>
+                    <h3>IT Consulting</h3>
+                    <p>Expert technology consulting and implementation services</p>
+                    <p class="price">Starting from $399/month</p>
+                    <a href="services.html" class="btn btn-small">View Details</a>
+                </div>
+            </div>
+            <div class="services-link">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Preview -->
+    <section id="products-preview" class="products-preview">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <p class="section-subtitle">High-quality products available for purchase</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">📱</div>
+                    <h3>Professional Package</h3>
+                    <p class="price">$99.99</p>
+                    <button class="btn btn-small" onclick="addToCart('Professional Package', 99.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">📊</div>
+                    <h3>Business Suite</h3>
+                    <p class="price">$199.99</p>
+                    <button class="btn btn-small" onclick="addToCart('Business Suite', 199.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🏆</div>
+                    <h3>Enterprise Solution</h3>
+                    <p class="price">$499.99</p>
+                    <button class="btn btn-small" onclick="addToCart('Enterprise Solution', 499.99)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="products-link">
+                <a href="products.html" class="btn btn-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Preview -->
+    <section id="contact-section" class="contact-preview">
+        <div class="container">
+            <h2>Get in Touch / Kontakte Nou</h2>
+            <p class="section-subtitle">We're here to help and answer any question you might have / Nou la pou ede epi reponn kesyon ou</p>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <h4>Phone / Telefòn</h4>
+                            <p><a href="tel:+1-786-314-1033">+1 (786) 314-1033</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">✉️</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:paraisonathanael94@gmail.com">paraisonathanael94@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h4>Location / Lokalizasyon</h4>
+                            <p>United States / Etazini</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <input type="text" placeholder="Your Name / Non ou" required>
+                        <input type="email" placeholder="Your Email / Email ou" required>
+                        <textarea placeholder="Your Message / Mesaj ou" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message / Voye Mesaj</button>
+                    </form>
+                </div>
+            </div>
+            <div class="full-contact-link">
+                <a href="contact.html" class="btn btn-secondary">Full Contact Page / Paj Kontak Konplè</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Logos Global Services LLC</h4>
+                    <p>Your trusted partner for quality services / Patnè ou fè konfyans pou sèvis kalite</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links / Lyen Vit</h4>
+                    <ul>
+                        <li><a href="index.html">Home / Akèy</a></li>
+                        <li><a href="about.html">About / Sou Nou</a></li>
+                        <li><a href="services.html">Services / Sèvis</a></li>
+                        <li><a href="contact.html">Contact / Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Logos Global Services LLC. All rights reserved. / Tout dwa rezève.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

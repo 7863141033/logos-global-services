@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Us - Get in touch with Logos Global Services LLC">
+    <title>Contact Us - Logos Global Services LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Logos Global Services</h1>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                        <li><a href="index.html" class="nav-link cart-link">Cart <span id="cart-count">0</span></a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us / Kontakte Nou</h1>
+            <p>We're here to help and answer any question you might have / Nou la pou ede epi reponn kesyon ou</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-full">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Information -->
+                <div class="contact-info-full">
+                    <h2>Get in Touch / Kontakte Nou</h2>
+                    <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                    <p style="margin-top: 0.5rem; font-style: italic; color: #666;">
+                        Gen kesyon? Nou ta renmen tande ou. Voye nou yon mesaj epi nou va reponn pi vit ke posib.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-content">
+                                <h4>Phone / Telefòn</h4>
+                                <p><a href="tel:+1-786-314-1033">+1 (786) 314-1033</a></p>
+                                <p class="method-subtitle">Mon-Fri, 9am to 6pm EST / Lindi-Vandredi, 9am - 6pm EST</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-content">
+                                <h4>Email</h4>
+                                <p><a href="mailto:paraisonathanael94@gmail.com">paraisonathanael94@gmail.com</a></p>
+                                <p class="method-subtitle">We'll respond within 24 hours / Nou va reponn nan 24 è</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-content">
+                                <h4>Location</h4>
+                                <p>United States</p>
+                                <p class="method-subtitle">Available nationwide</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">💬</div>
+                            <div class="method-content">
+                                <h4>Live Chat</h4>
+                                <p><a href="#">Start Live Chat</a></p>
+                                <p class="method-subtitle">Chat with our support team</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-full">
+                    <h2>Send us a Message / Voye Nou Yon Mesaj</h2>
+                    <form id="contact-form-page" class="form">
+                        <div class="form-group">
+                            <label for="name">Full Name / Non Konplè *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address / Adrès Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number / Nimewo Telefòn</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject / Sijè *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message / Mesaj *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Interested In (Optional) / Enteresan (Opsyonèl)</label>
+                            <select id="service" name="service">
+                                <option value="">-- Select a Service / -- Chwazi yon Sèvis --</option>
+                                <option value="logistics">Logistics & Supply Chain / Lojistik ak Kadèn Sipli</option>
+                                <option value="security">Security Services / Sèvis Sekirite</option>
+                                <option value="it">IT Consulting / Konsiltasyon IT</option>
+                                <option value="hr">Human Resources / Resous Imen</option>
+                                <option value="business">Business Consulting / Konsiltasyon Biznis</option>
+                                <option value="marketing">Digital Marketing / Maketing Dijital</option>
+                                <option value="other">Other / Lòt</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message / Voye Mesaj</button>
+                    </form>
+                    <div id="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What are your business hours?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We're available Monday through Friday, 9am to 6pm EST. For urgent matters outside business hours, please call our emergency line at +1 (800) LOGOS-1.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How quickly will you respond to my inquiry?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We aim to respond to all inquiries within 24 hours. During business hours, you may receive a response much faster. For immediate assistance, please call us directly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you offer consultations?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer free initial consultations to discuss your needs and how we can help. Contact us to schedule a meeting with one of our specialists.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What payment methods do you accept?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards, PayPal, bank transfers, and Zelle. For enterprise clients, we also offer custom payment arrangements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you provide support after purchase?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! All our products and services include ongoing support. The level of support depends on your package, ranging from email support to 24/7 dedicated account managers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Logos Global Services LLC</h4>
+                    <p>Your trusted partner for quality services</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Logos Global Services LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
