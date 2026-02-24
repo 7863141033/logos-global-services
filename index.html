@@ -180,10 +180,12 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contact-form">
-                        <input type="text" placeholder="Your Name / Non ou" required>
-                        <input type="email" placeholder="Your Email / Email ou" required>
-                        <textarea placeholder="Your Message / Mesaj ou" rows="5" required></textarea>
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/meelvzrg" method="POST">
+                        <input type="hidden" name="_subject" value="New Contact Message From Website">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="name" placeholder="Your Name / Non ou" required>
+                        <input type="email" name="email" placeholder="Your Email / Email ou" required>
+                        <textarea name="message" placeholder="Your Message / Mesaj ou" rows="5" required></textarea>
                         <button type="submit" class="btn btn-primary">Send Message / Voye Mesaj</button>
                     </form>
                 </div>
@@ -229,3 +231,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
